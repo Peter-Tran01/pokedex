@@ -1,0 +1,34 @@
+.background {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.number {
+    background-color: greenyellow;
+    flex-grow: 1;
+}
+
+.name {
+    background-color: blue;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.image {
+    background-color: firebrick;
+    align-self: stretch;
+}
+
+.type {
+    background-color: olivedrab;
+    align-self: stretch;
+    flex-grow: 2;
+}
+
+.weakness {
+    background-color: salmon;
+    align-self: stretch;
+    flex-grow: 2;
+}
