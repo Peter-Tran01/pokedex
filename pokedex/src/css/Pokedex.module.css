@@ -32,3 +32,18 @@
     align-self: stretch;
     flex-grow: 2;
 }
+
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchBlock {
+    width: 300px;
+}
+
+.button {
+    width: "95%";
+    padding: 8.5;
+    border-radius: 100;
+}

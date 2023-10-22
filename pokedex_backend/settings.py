@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "pokedex_backend",
 ]
 
 MIDDLEWARE = [
@@ -85,7 +86,6 @@ DATABASES = {
         "PASSWORD": data["password"],
         "HOST": data["host"],
         "PORT": data["port"],
-        # 'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
