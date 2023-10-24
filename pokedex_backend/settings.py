@@ -12,8 +12,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import json
+import os
 
-f = open("./mysql_credentials.json")
+absolute_path = os.path.dirname(os.path.abspath(__file__))
+file_path = absolute_path + "\mysql_credentials.json"
+print(file_path)
+f = open(file_path)
 data = json.load(f)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
