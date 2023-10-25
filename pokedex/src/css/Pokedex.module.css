@@ -47,3 +47,93 @@
     padding: 8.5;
     border-radius: 100;
 }
+
+.Normal {
+    background-color: #a8a77a;
+    color: white;
+}
+
+.Fire {
+    background-color: #ee8130;
+    color: white;
+}
+
+.Water {
+    background-color: #6390f0;
+    color: white;
+}
+
+.Electric {
+    background-color: #f7d02c;
+    color: white;
+}
+
+.Grass {
+    background-color: #7ac74c;
+    color: white;
+}
+
+.Ice {
+    background-color: #96d9d6;
+    color: white;
+}
+
+.Fighting {
+    background-color: #c22e28;
+    color: white;
+}
+
+.Poison {
+    background-color: #a33ea1;
+    color: white;
+}
+
+.Ground {
+    background-color: #e2bf65;
+    color: white;
+}
+
+.Flying {
+    background-color: #a98ff3;
+    color: white;
+}
+
+.Psychic {
+    background-color: #f95587;
+    color: white;
+}
+
+.Bug {
+    background-color: #a6b91a;
+    color: white;
+}
+
+.Rock {
+    background-color: #b6a136;
+    color: white;
+}
+
+.Ghost {
+    background-color: #735797;
+    color: white;
+}
+
+.Dragon {
+    background-color: #6f35fc;
+    color: white;
+}
+
+.Dark {
+    background-color: #705746;
+    color: white;
+}
+
+.Steel {
+    background-color: #b7b7ce;
+    color: white;
+}
+
+.Fairy {
+    background-color: #d685ad;
+    color: white;
+}
