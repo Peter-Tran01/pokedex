@@ -39,37 +39,65 @@ function Pokedex() {
                 </Button>
                 <div className={styles.searchBlock} />
             </form>
-            {pokemonData.map((pokemon) => (
-                <div className={styles.background}>
-                    <div className={styles.number}>
-                        {pokemon.pokedex_number}
+            <br />
+            <div className={styles.results}>
+                <div className={styles.resultIndent} />
+                <div className={styles.resultsBlock}>
+                    <div className={styles.background}>
+                        <div className={styles.number}>
+                            <div className={styles.label}>Pokedex Number</div>
+                        </div>
+                        <div className={styles.name}>
+                            <div className={styles.label}>Pokemon Name</div>
+                        </div>
+                        <div className={styles.image}>
+                            {/* <div className={styles.label}>Picture</div> */}
+                        </div>
+                        <div className={styles.pokemon_type}>
+                            <div className={styles.label}>Pokemon Type</div>
+                        </div>
+                        <div className={styles.weakness}>
+                            <div className={styles.label}>Pokemon Weakness</div>
+                        </div>
                     </div>
-                    <div className={styles.name}>{pokemon.pokemon}</div>
-                    <div className={styles.image}>Sprite</div>
-                    <div className={styles.type}>
-                        {pokemon.type.map((type, index) => (
-                            // ADD STYLES
-                            <div
-                                key={index}
-                                className={`${styles.TO_BE_DETERMINED} ${styles[type]}`}
-                            >
-                                {type}
+                    {pokemonData.map((pokemon) => (
+                        <div className={styles.background}>
+                            <div className={styles.number}>
+                                {pokemon.pokedex_number}
                             </div>
-                        ))}
-                    </div>
-                    <div className={styles.weakness}>
-                        {pokemon.weakness.map((weakness, index) => (
-                            // ADD STYLES
-                            <div
-                                key={index}
-                                className={`${styles.TO_BE_DETERMINED} ${styles[weakness]}`}
-                            >
-                                {weakness}
+                            <hr />
+                            <div className={styles.name}>{pokemon.pokemon}</div>
+                            <hr />
+                            <div className={styles.image}>Sprite</div>
+                            <hr />
+                            <div className={styles.pokemon_type}>
+                                {pokemon.type.map((type, index) => (
+                                    // ADD STYLES
+                                    <div
+                                        key={index}
+                                        className={`${styles.type} ${styles[type]}`}
+                                    >
+                                        {type}
+                                    </div>
+                                ))}
                             </div>
-                        ))}
-                    </div>
+                            <hr />
+                            <div className={styles.weakness}>
+                                {pokemon.weakness.map((weakness, index) => (
+                                    // ADD STYLES
+                                    <div
+                                        key={index}
+                                        className={`${styles.type} ${styles[weakness]}`}
+                                    >
+                                        {weakness}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
-            ))}
+                <div className={styles.resultIndent} />
+            </div>
         </div>
     );
 }

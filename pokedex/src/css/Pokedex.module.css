@@ -2,40 +2,58 @@
     flex: 1;
     display: flex;
     flex-direction: row;
-    background-color: black;
 }
 
 .number {
     background-color: greenyellow;
-    flex-grow: 1;
+    width: 90px;
 }
 
 .name {
     background-color: blue;
     align-self: stretch;
-    flex-grow: 1;
+    width: 250px;
 }
 
 .image {
     background-color: firebrick;
-    align-self: stretch;
+    width: 100px;
 }
 
-.type {
+.pokemon_type {
     background-color: olivedrab;
     align-self: stretch;
-    flex-grow: 2;
+    width: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .weakness {
     background-color: salmon;
     align-self: stretch;
     flex-grow: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .search {
     display: flex;
     flex-direction: row;
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+}
+
+.resultsBlock {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.resultIndent {
+    width: 100px;
 }
 
 .searchBlock {
@@ -46,6 +64,24 @@
     width: "95%";
     padding: 8.5;
     border-radius: 100;
+}
+
+.type {
+    width: 80px;
+    border-radius: 7px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+/* .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .Normal {
